@@ -1,5 +1,5 @@
 # SketchKnitter
-![Python 3.6](https://img.shields.io/badge/python-3.6-green) ![Pytorch 1.13](https://img.shields.io/badge/pytorch-1.13-green) ![MIT License](https://img.shields.io/badge/licence-MIT-green)
+![Python 3.6](https://img.shields.io/badge/python-3.6-green) ![Pytorch 1.6](https://img.shields.io/badge/pytorch-1.6-green) ![MIT License](https://img.shields.io/badge/licence-MIT-green)
 
 In this repository, you can find the PyTorch implementation of [SketchKnitter: Vectorized Sketch Generation with Diffusion Models](https://openreview.net/pdf?id=4eJ43EN2g6l). 
 
