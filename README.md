@@ -36,14 +36,14 @@ python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-dat
 The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score) can directly use data in vector format, please go to the [official website](https://github.com/KhrulkovV/geometry-score) for instructions.
 
 ## Results
-| Simple | FID↓ | GS↓ |  Prec↑ | Rec↑ |
+| **Simple** | FID↓ | GS↓ |  Prec↑ | Rec↑ |
 | :----:| :----: | :----: | :----: | :----: |
-| SketchPix2seq | 13.3 | 7.0 | 0.40 | 0.79 |
-| SketchHealer | 10.3 | 5.9 | 0.45 | 0.81 |
-| SketchRNN | 10.8 | 5.4 | 0.44 | 0.82 |
-| Diff-HW | 13.3 | 6.8 | 0.42 | 0.81 |
-| SketchODE | 11.5 | 9.4 | 0.48 | 0.74 |
-| Ours (full 1000 steps)  |  6.9 | 3.4 | 0.52 | 0.88 |
+| [SketchPix2seq](https://github.com/MarkMoHR/sketch-pix2seq) | 13.3 | 7.0 | 0.40 | 0.79 |
+| [SketchHealer](https://github.com/sgybupt/SketchHealer) | 10.3 | 5.9 | 0.45 | 0.81 |
+| [SketchRNN](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn) | 10.8 | 5.4 | 0.44 | 0.82 |
+| [Diff-HW](https://github.com/tcl9876/Diffusion-Handwriting-Generation) | 13.3 | 6.8 | 0.42 | 0.81 |
+| [SketchODE](https://github.com/dasayan05/sketchode) | 11.5 | 9.4 | 0.48 | 0.74 |
+| Ours (full 1000 steps)  |  **6.9** | **3.4** | **0.52** | **0.88** |
 | Ours (r-Shortcut, S=30)  | 7.4 | 3.9 | 0.47 | 0.87 |
 | Ours (Linear-DDIMs, S=30) | 11.9 | 6.4 | 0.38 | 0.81 |
 | Ours (Quadratic-DDIMs, S=30)  | 12.3 | 6.6 | 0.41 | 0.79 |
@@ -51,13 +51,13 @@ The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score)
 | Ours (Point-Shuffle) | 9.5 | 5.3 | 0.35 | 0.72 |
 | Ours (Stroke-Shuffle)   |  8.2 | 3.8  | 0.36 | 0.74 |
 
-| Moderate | FID↓ | GS↓ |  Prec↑ | Rec↑ |
+| **Moderate** | FID↓ | GS↓ |  Prec↑ | Rec↑ |
 | :----:| :----: | :----: | :----: | :----: |
-| SketchPix2seq |  |  | | |
-| SketchHealer |  |  | | |
-| SketchRNN |  |  | | |
-| Diff-HW |  |  | | |
-| SketchODE |  |  | | |
+| [SketchPix2seq](https://github.com/MarkMoHR/sketch-pix2seq) |  |  | | |
+| [SketchHealer](https://github.com/sgybupt/SketchHealer) |  |  | | |
+| [SketchRNN](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn) |  |  | | |
+| [Diff-HW](https://github.com/tcl9876/Diffusion-Handwriting-Generation) |  |  | | |
+| [SketchODE](https://github.com/dasayan05/sketchode) |  |  | | |
 | Ours (full 1000 steps)  |  |  | | |
 | Ours (r-Shortcut, S=30)  |  |  | | |
 | Ours (Linear-DDIMs, S=30) |  |  | | |
@@ -66,13 +66,13 @@ The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score)
 | Ours (Point-Shuffle) |  |  | | |
 | Ours (Stroke-Shuffle)   |  |  | | |
 
-| Complex | FID↓ | GS↓ |  Prec↑ | Rec↑ |
+| **Complex** | FID↓ | GS↓ |  Prec↑ | Rec↑ |
 | :----:| :----: | :----: | :----: | :----: |
-| SketchPix2seq |  |  | | |
-| SketchHealer |  |  | | |
-| SketchRNN |  |  | | |
-| Diff-HW |  |  | | |
-| SketchODE |  |  | | |
+| [SketchPix2seq](https://github.com/MarkMoHR/sketch-pix2seq) |  |  | | |
+| [SketchHealer](https://github.com/sgybupt/SketchHealer) |  |  | | |
+| [SketchRNN](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn) |  |  | | |
+| [Diff-HW](https://github.com/tcl9876/Diffusion-Handwriting-Generation) |  |  | | |
+| [SketchODE](https://github.com/dasayan05/sketchode) |  |  | | |
 | Ours (full 1000 steps)  |  |  | | |
 | Ours (r-Shortcut, S=30)  |  |  | | |
 | Ours (Linear-DDIMs, S=30) |  |  | | |
