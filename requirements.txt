@@ -1,6 +1,7 @@
 Pillow
 blobfile
 mypy
+scipy
 numpy
 pytest
 requests
