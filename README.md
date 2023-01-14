@@ -35,6 +35,54 @@ python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-dat
 
 The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score) can directly use data in vector format, please go to the [official website](https://github.com/KhrulkovV/geometry-score) for instructions.
 
+## Results
+| Simple | FID↓ | GS↓ |  Prec↑ | Rec↑ |
+| :----:| :----: | :----: | :----: | :----: |
+| SketchPix2seq |  |  | | |
+| SketchHealer |  |  | | |
+| SketchRNN |  |  | | |
+| Diff-HW |  |  | | |
+| SketchODE |  |  | | |
+| Ours (full 1000 steps)  |  |  | | |
+| Ours (r-Shortcut, S=30)  |  |  | | |
+| Ours (Linear-DDIMs, S=30) |  |  | | |
+| Ours (Quadratic-DDIMs, S=30)  |  |  | | |
+| Ours (Abs)  |  |  | | |
+| Ours (Point-Shuffle) |  |  | | |
+| Ours (Stroke-Shuffle)   |  |  | | |
+
+| Moderate | FID↓ | GS↓ |  Prec↑ | Rec↑ |
+| :----:| :----: | :----: | :----: | :----: |
+| SketchPix2seq |  |  | | |
+| SketchHealer |  |  | | |
+| SketchRNN |  |  | | |
+| Diff-HW |  |  | | |
+| SketchODE |  |  | | |
+| Ours (full 1000 steps)  |  |  | | |
+| Ours (r-Shortcut, S=30)  |  |  | | |
+| Ours (Linear-DDIMs, S=30) |  |  | | |
+| Ours (Quadratic-DDIMs, S=30)  |  |  | | |
+| Ours (Abs)  |  |  | | |
+| Ours (Point-Shuffle) |  |  | | |
+| Ours (Stroke-Shuffle)   |  |  | | |
+
+| Complex | FID↓ | GS↓ |  Prec↑ | Rec↑ |
+| :----:| :----: | :----: | :----: | :----: |
+| SketchPix2seq |  |  | | |
+| SketchHealer |  |  | | |
+| SketchRNN |  |  | | |
+| Diff-HW |  |  | | |
+| SketchODE |  |  | | |
+| Ours (full 1000 steps)  |  |  | | |
+| Ours (r-Shortcut, S=30)  |  |  | | |
+| Ours (Linear-DDIMs, S=30) |  |  | | |
+| Ours (Quadratic-DDIMs, S=30)  |  |  | | |
+| Ours (Abs)  |  |  | | |
+| Ours (Point-Shuffle) |  |  | | |
+| Ours (Stroke-Shuffle)   |  |  | | |
+
+
+
 ## Citation
 The paper has been accepted by ICLR 2023, and the citation will be released later. 
 
