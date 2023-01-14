@@ -10,7 +10,9 @@ _Authors_: [Qiang Wang](https://scholar.google.com/citations?user=lXyi3t4AAAAJ&h
 ![Fig.1](https://github.com/XDUWQ/SketchKnitter/blob/main/images/overview.png)
 
 ## Datasets
-Please go to the [QuickDraw official website](https://github.com/googlecreativelab/quickdraw-dataset) to download the datasets. The class list used in the paper: `moon`, `airplane`, `fish`, `umbrella`, `train`, `spider`, `shoe`, `apple`, `lion`, `bus`, you can also replace it with any other category.
+Please go to the [QuickDraw official website](https://github.com/googlecreativelab/quickdraw-dataset) to download the datasets. The class list used in the paper: `moon`, `airplane`, `fish`, `umbrella`, `train`, `spider`, `shoe`, `apple`, `lion`, `bus`, you can also replace it with any other category. 
+
+The complete dataset in the paper can be downloaded from [this link](https://github.com/XDUWQ/SketchKnitter/tree/main/datasets). 
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/SketchKnitter/blob/main/requirements.txt).
