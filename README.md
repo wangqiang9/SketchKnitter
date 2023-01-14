@@ -31,6 +31,7 @@ Please package the results to be evaluated in `.npz` format, and provide `FID`, 
 python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-data]
 ```
 
+The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score) can directly use data in vector format, please go to the [official website](https://github.com/KhrulkovV/geometry-score) for instructions.
 
 ## Citation
 The paper has been accepted by ICLR 2023, and the citation will be released later. 
