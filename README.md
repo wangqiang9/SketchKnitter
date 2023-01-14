@@ -81,7 +81,9 @@ The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score)
 | Ours (Point-Shuffle) |  |  | | |
 | Ours (Stroke-Shuffle)   |  |  | | |
 
+![Fig 4](https://github.com/XDUWQ/SketchKnitter/blob/main/images/4.png)
 
+Only part of the results are listed here. For more detailed results, please see [our paper and supplementary materials](https://openreview.net/pdf?id=4eJ43EN2g6l).
 
 ## Citation
 The paper has been accepted by ICLR 2023, and the citation will be released later. 
