@@ -1,0 +1,12 @@
+Pillow
+blobfile
+mypy
+numpy
+pytest
+requests
+torch
+torchvision
+scipy
+requests
+tqdm
+tensorflow-gpu>=2.0
