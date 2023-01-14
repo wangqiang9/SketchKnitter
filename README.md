@@ -23,9 +23,14 @@ pip install -r requirements.txt
 
 ## Test
 
+
+
 ## Evaluation
 
+
+
 ## Citation
+The paper has been accepted by ICLR 2023, and the citation will be released later. 
 
 ## Acknowledgements
 * [Quick, Draw!](https://github.com/googlecreativelab/quickdraw-dataset)
