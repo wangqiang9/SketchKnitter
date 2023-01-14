@@ -38,18 +38,18 @@ The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score)
 ## Results
 | Simple | FID↓ | GS↓ |  Prec↑ | Rec↑ |
 | :----:| :----: | :----: | :----: | :----: |
-| SketchPix2seq |  |  | | |
-| SketchHealer |  |  | | |
-| SketchRNN |  |  | | |
-| Diff-HW |  |  | | |
-| SketchODE |  |  | | |
-| Ours (full 1000 steps)  |  |  | | |
-| Ours (r-Shortcut, S=30)  |  |  | | |
-| Ours (Linear-DDIMs, S=30) |  |  | | |
-| Ours (Quadratic-DDIMs, S=30)  |  |  | | |
-| Ours (Abs)  |  |  | | |
-| Ours (Point-Shuffle) |  |  | | |
-| Ours (Stroke-Shuffle)   |  |  | | |
+| SketchPix2seq | 13.3 | 7.0 | 0.40 | 0.79 |
+| SketchHealer | 10.3 | 5.9 | 0.45 | 0.81 |
+| SketchRNN | 10.8 | 5.4 | 0.44 | 0.82 |
+| Diff-HW | 13.3 | 6.8 | 0.42 | 0.81 |
+| SketchODE | 11.5 | 9.4 | 0.48 | 0.74 |
+| Ours (full 1000 steps)  |  6.9 | 3.4 | 0.52 | 0.88 |
+| Ours (r-Shortcut, S=30)  | 7.4 | 3.9 | 0.47 | 0.87 |
+| Ours (Linear-DDIMs, S=30) | 11.9 | 6.4 | 0.38 | 0.81 |
+| Ours (Quadratic-DDIMs, S=30)  | 12.3 | 6.6 | 0.41 | 0.79 |
+| Ours (Abs)  | 20.7 | 12.1 | 0.18 | 0.55 |
+| Ours (Point-Shuffle) | 9.5 | 5.3 | 0.35 | 0.72 |
+| Ours (Stroke-Shuffle)   |  8.2 | 3.8  | 0.36 | 0.74 |
 
 | Moderate | FID↓ | GS↓ |  Prec↑ | Rec↑ |
 | :----:| :----: | :----: | :----: | :----: |
