@@ -12,7 +12,7 @@ _Authors_: [Qiang Wang](https://scholar.google.com/citations?user=lXyi3t4AAAAJ&h
 ## Datasets
 Please go to the [QuickDraw official website](https://github.com/googlecreativelab/quickdraw-dataset) to download the datasets. The class list used in the paper: `moon`, `airplane`, `fish`, `umbrella`, `train`, `spider`, `shoe`, `apple`, `lion`, `bus`, you can also replace it with any other category. 
 
-The complete dataset in the paper can be downloaded from [this link](https://github.com/XDUWQ/SketchKnitter/tree/main/datasets). 
+The complete dataset in the paper can be downloaded from [this link](https://github.com/XDUWQ/SketchKnitter/tree/main/datasets). You can also download the all of Quickdraw `.npz` datasets from [Google cloud](https://console.cloud.google.com/storage/browser/quickdraw_dataset/sketchrnn) for local use. 
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/SketchKnitter/blob/main/requirements.txt).
@@ -21,6 +21,10 @@ pip install -r requirements.txt
 ```
 
 ## Train
+### Example Usage:
+
+### Haperparameters
+Here is a list of full options for the model, along with the default settings:
 
 
 ## Test
