@@ -14,6 +14,8 @@ Please go to the [QuickDraw official website](https://github.com/googlecreativel
 
 The complete dataset in the paper can be downloaded from [this link](https://github.com/XDUWQ/SketchKnitter/tree/main/datasets). Due to size limitations, this repo does not contain any datasets, you can also download the all of Quickdraw `.npz` datasets from [Google Cloud](https://console.cloud.google.com/storage/browser/quickdraw_dataset/sketchrnn) for local use. Each category class is stored in its own file, and contains training/validation/test set sizes of 70000/2500/2500 examples.
 
+In addition to the QuickDraw dataset, you can train the model on any dataset, but please pay attention to organizing the dataset into vector format and packaging it into `.npz` file. In the case of less data sets, please pay attention to over-fitting. If you want to create your own dataset, you can follow the [official tutorial](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn#creating-your-own-dataset) of SketchRNN.
+
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/SketchKnitter/blob/main/requirements.txt).
 ```
@@ -40,7 +42,7 @@ Please package the results to be evaluated in `.npz` format, and provide `FID`, 
 python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-data]
 ```
 
-The calculation of [Geometry Score](https://github.com/KhrulkovV/geometry-score) can directly use data in vector format, please go to the [official website](https://github.com/KhrulkovV/geometry-score) for instructions.
+We find that `IS` can not accurately describe the distribution of vectorized data, so we use `GS` instead of `IS` to measure diversity in this paper. The calculation of [Geometry Score(`GS`)](https://github.com/KhrulkovV/geometry-score) can directly use data in vector format, please go to the [official website](https://github.com/KhrulkovV/geometry-score) for instructions.
 
 ## Results
 | **Simple** | FID↓ | GS↓ |  Prec↑ | Rec↑ |
