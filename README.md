@@ -12,7 +12,7 @@ _Authors_: [Qiang Wang](https://scholar.google.com/citations?user=lXyi3t4AAAAJ&h
 ## Datasets
 Please go to the [QuickDraw official website](https://github.com/googlecreativelab/quickdraw-dataset) to download the datasets. The class list used in the paper: `moon`, `airplane`, `fish`, `umbrella`, `train`, `spider`, `shoe`, `apple`, `lion`, `bus`, you can also replace it with any other category. 
 
-The complete dataset in the paper can be downloaded from [this link](https://github.com/XDUWQ/SketchKnitter/tree/main/datasets). You can also download the all of Quickdraw `.npz` datasets from [Google Cloud](https://console.cloud.google.com/storage/browser/quickdraw_dataset/sketchrnn) for local use. 
+The complete dataset in the paper can be downloaded from [this link](https://github.com/XDUWQ/SketchKnitter/tree/main/datasets). Due to size limitations, this repo does not contain any datasets, you can also download the all of Quickdraw `.npz` datasets from [Google Cloud](https://console.cloud.google.com/storage/browser/quickdraw_dataset/sketchrnn) for local use. Each category class is stored in its own file, and contains training/validation/test set sizes of 70000/2500/2500 examples.
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/SketchKnitter/blob/main/requirements.txt).
