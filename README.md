@@ -28,7 +28,10 @@ Here is a list of full options for the model, along with the default settings:
 
 
 ## Test
+### Example Usage:
 
+### Haperparameters
+Here is a list of full options for the model, along with the default settings:
 
 
 ## Evaluation
