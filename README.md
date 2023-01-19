@@ -94,6 +94,9 @@ We find that `IS` can not accurately describe the distribution of vectorized dat
 
 Only part of the results are listed here. For more detailed results, please see [our paper and supplementary materials](https://openreview.net/pdf?id=4eJ43EN2g6l).
 
+## License
+This project is released under the [MIT License](https://github.com/XDUWQ/SketchKnitter/blob/main/LICENSE).
+
 ## Citation
 The paper has been accepted by ICLR 2023, and the citation will be released later. 
 
