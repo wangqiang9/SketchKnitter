@@ -104,4 +104,5 @@ The paper has been accepted by ICLR 2023, and the citation will be released late
 * [Quick, Draw!](https://github.com/googlecreativelab/quickdraw-dataset)
 * [guided-diffusion](https://github.com/openai/guided-diffusion)
 * [Sketch-R2CNN](https://github.com/craigleili/Sketch-R2CNN)
+* [PerceptualSimilarity](https://github.com/richzhang/PerceptualSimilarity)
 
