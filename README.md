@@ -27,13 +27,23 @@ pip install -r requirements.txt
 
 ### Haperparameters
 Here is a list of full options for the model, along with the default settings:
-
-
-## Test
-### Example Usage:
-
-### Haperparameters
-Here is a list of full options for the model, along with the default settings:
+```
+lr,                # learning rate.
+log_dir,           # save log path.
+use_fp16,          # whether to use mixed precision training.
+ema_rate,          # comma-separated list of EMA values
+category,          # list of category name to be trained.
+data_dir,          # the data sets path.
+image_size,        # the max numbers of datasets.
+batch_size,        # batch size of training.
+num_channels,      # the numbers of channels in Unet backbone.
+save_interval,     # the save models interval.
+noise_schedule,    # the method of adding noise is linear by default.
+num_res_blocks,    # the numbers of resnet blocks in Unet backbone.
+diffusion_steps，  # the diffusion steps in the forward process.
+schedule_sampler,  # the schedule of sampler.
+fp16_scale_growth, # the mixed precision scale growth.
+```
 
 
 ## Evaluation
