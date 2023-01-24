@@ -22,7 +22,7 @@ The requirements of this repo can be found in [requirements.txt](https://github.
 pip install -r requirements.txt
 ```
 
-## Train
+## Train and Test
 ### Haperparameters
 Here is a list of full options for the model, along with the default settings:
 ```
@@ -44,6 +44,7 @@ diffusion_steps，  # the diffusion steps in the forward process.
 schedule_sampler,  # the schedule of sampler.
 fp16_scale_growth, # the mixed precision scale growth.
 ```
+
 
 ## Visualization
 Because the result file is trained, reasoned and stored in the format of relative coordinate difference vector, if you want to visualize the result, fill the saved `.npz` file address into `SketchData(dataPath='./datasets_npz')`, and then run the following script, and the result `.jpg` file will be saved in `./save_sketch`.
