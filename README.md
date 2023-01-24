@@ -32,6 +32,7 @@ use_fp16,          # whether to use mixed precision training.
 ema_rate,          # comma-separated list of EMA values
 category,          # list of category name to be trained.
 data_dir,          # the data sets path.
+pen_break,         # determines the experience value of stroke break.
 image_size,        # the max numbers of datasets.
 class_cond,        # whether to use guidance technology.
 batch_size,        # batch size of training.
