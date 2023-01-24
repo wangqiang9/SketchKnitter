@@ -45,7 +45,7 @@ fp16_scale_growth, # the mixed precision scale growth.
 ```
 
 ## Visualization
-Because the result file is trained, reasoned and stored in the format of relative coordinate difference vector, if you want to visualize the result, fill the saved `.npz` file address into `SketchData(dataPath='./datasets_npz')`, and then run the following script, and the result file will be saved in `./save_sketch`.
+Because the result file is trained, reasoned and stored in the format of relative coordinate difference vector, if you want to visualize the result, fill the saved `.npz` file address into `SketchData(dataPath='./datasets_npz')`, and then run the following script, and the result `.jpg` file will be saved in `./save_sketch`.
 ```
 python draw_sketch.py
 ```
