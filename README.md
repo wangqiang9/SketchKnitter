@@ -23,8 +23,6 @@ pip install -r requirements.txt
 ```
 
 ## Train
-### Example Usage:
-
 ### Haperparameters
 Here is a list of full options for the model, along with the default settings:
 ```
@@ -35,6 +33,7 @@ ema_rate,          # comma-separated list of EMA values
 category,          # list of category name to be trained.
 data_dir,          # the data sets path.
 image_size,        # the max numbers of datasets.
+class_cond,        # whether to use guidance technology.
 batch_size,        # batch size of training.
 num_channels,      # the numbers of channels in Unet backbone.
 save_interval,     # the save models interval.
