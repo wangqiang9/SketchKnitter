@@ -33,6 +33,8 @@ use_fp16,          # whether to use mixed precision training.
 ema_rate,          # comma-separated list of EMA values
 category,          # list of category name to be trained.
 data_dir,          # the data sets path.
+use_ddim,          # choose whether to use DDIM or DDPM
+save_path,         # path to save vector results.
 pen_break,         # determines the experience value of stroke break.
 image_size,        # the max numbers of datasets.
 model_path,        # path to save the trained model checkpoint.
@@ -49,7 +51,7 @@ fp16_scale_growth, # the mixed precision scale growth.
 
 ### Example Usage:
 ```
-python sample.py --model_path [/path/to/save_models] --pen_break 0.1 --save_path [/path/to/save_results] --use_ddim True --log_dir [/path/to/save_log] --diffusion_steps 1000 --noise_schedule linear --image_size 96 --num_channels 96 --num_res_blocks 3
+python sample.py --model_path [/path/to/save_models] --pen_break 0.1 --save_path [/path/to/save_results] --use_ddim True --log_dir [/path/to/save_log] --diffusion_steps 100 --noise_schedule linear --image_size 96 --num_channels 96 --num_res_blocks 3
 ```
 
 ## Visualization
