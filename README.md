@@ -22,7 +22,8 @@ The requirements of this repo can be found in [requirements.txt](https://github.
 pip install -r requirements.txt
 ```
 
-## Train and Test
+## Train and Inference
+
 ### Haperparameters
 Here is a list of full options for the model, along with the default settings:
 ```
@@ -34,6 +35,7 @@ category,          # list of category name to be trained.
 data_dir,          # the data sets path.
 pen_break,         # determines the experience value of stroke break.
 image_size,        # the max numbers of datasets.
+model_path,        # path to save the trained model checkpoint.
 class_cond,        # whether to use guidance technology.
 batch_size,        # batch size of training.
 num_channels,      # the numbers of channels in Unet backbone.
@@ -45,6 +47,10 @@ schedule_sampler,  # the schedule of sampler.
 fp16_scale_growth, # the mixed precision scale growth.
 ```
 
+### Example Usage:
+```
+python sample.py --model_path [/path/to/save_models] --pen_break 0.1 --save_path [/path/to/save_results] --use_ddim True --log_dir [/path/to/save_log] --diffusion_steps 1000 --noise_schedule linear --image_size 96 --num_channels 96 --num_res_blocks 3
+```
 
 ## Visualization
 Because the result file is trained, reasoned and stored in the format of relative coordinate difference vector, if you want to visualize the result, fill the saved `.npz` file address into `SketchData(dataPath='./datasets_npz')`, and then run the following script, and the result `.jpg` file will be saved in `./save_sketch`.
