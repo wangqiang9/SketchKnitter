@@ -26,7 +26,6 @@ result_mean = { 'top1 acc': 0,
               }
 
 if __name__ == "__main__":
-    # Ours
     for each_cate in category_list_varli:
         each_name = each_cate.replace(".npz", "")
         right_answer = all_categories_list.index(each_cate)
