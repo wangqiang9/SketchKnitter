@@ -25,28 +25,32 @@ pip install -r requirements.txt
 ## Train and Inference
 
 ### Haperparameters
-Here is a list of full options for the model, along with the default settings:
+Here is a list of full options for the model:
 ```
-lr,                # learning rate.
-log_dir,           # save log path.
-use_fp16,          # whether to use mixed precision training.
-ema_rate,          # comma-separated list of EMA values
-category,          # list of category name to be trained.
-data_dir,          # the data sets path.
-use_ddim,          # choose whether to use DDIM or DDPM
-save_path,         # path to save vector results.
-pen_break,         # determines the experience value of stroke break.
-image_size,        # the max numbers of datasets.
-model_path,        # path to save the trained model checkpoint.
-class_cond,        # whether to use guidance technology.
-batch_size,        # batch size of training.
-num_channels,      # the numbers of channels in Unet backbone.
-save_interval,     # the save models interval.
-noise_schedule,    # the method of adding noise is linear by default.
-num_res_blocks,    # the numbers of resnet blocks in Unet backbone.
-diffusion_steps，  # the diffusion steps in the forward process.
-schedule_sampler,  # the schedule of sampler.
-fp16_scale_growth, # the mixed precision scale growth.
+lr,                   # learning rate.
+log_dir,              # save log path.
+dropout，             # dropout rate.
+use_fp16,             # whether to use mixed precision training.
+ema_rate,             # comma-separated list of EMA values
+category,             # list of category name to be trained.
+data_dir,             # the data sets path.
+use_ddim,             # choose whether to use DDIM or DDPM
+save_path,            # path to save vector results.
+pen_break,            # determines the experience value of stroke break.
+image_size,           # the max numbers of datasets.
+model_path,           # path to save the trained model checkpoint.
+class_cond,           # whether to use guidance technology.
+batch_size,           # batch size of training.
+emb_channels,         # Unet embedding channel numbers.
+num_channels,         # the numbers of channels in Unet backbone.
+out_channels,         # output channels in Unet. 
+save_interval,        # saving models interval.
+noise_schedule,       # the method of adding noise is linear by default.
+num_res_blocks,       # numbers of resnet blocks in Unet backbone.
+diffusion_steps，     # diffusion steps in the forward process.
+schedule_sampler,     # the schedule of sampler.
+fp16_scale_growth,    # the mixed precision scale growth.
+use_scale_shift_norm, # whether to use scale shift norm. 
 ```
 
 ### Example Usage:
