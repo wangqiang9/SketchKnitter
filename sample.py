@@ -6,7 +6,10 @@ from sketch_diffusion import dist_util, logger
 from sketch_diffusion.script_util import (
     NUM_CLASSES,
     model_and_diffusion_defaults,
-    create_model_and_diffusion,
+    # different modes
+    # create_model_and_diffusion,
+    # create_model_and_diffusion_acc
+    create_model_and_diffusion_noise,
     add_dict_to_argparser,
     args_to_dict,
 )
@@ -36,7 +39,10 @@ def main():
     logger.configure(args.log_dir)
 
     logger.log("creating model and diffusion...")
-    model, diffusion = create_model_and_diffusion(
+    # different modes
+    #model, diffusion = create_model_and_diffusion(
+    #model, diffusion = create_model_and_diffusion_acc(
+    model, diffusion = create_model_and_diffusion_noise(
         **args_to_dict(args, model_and_diffusion_defaults().keys())
     )
     model.load_state_dict(
