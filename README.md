@@ -47,7 +47,7 @@ out_channels,         # output channels in Unet.
 save_interval,        # saving models interval.
 noise_schedule,       # the method of adding noise is linear by default.
 num_res_blocks,       # numbers of resnet blocks in Unet backbone.
-diffusion_steps，     # diffusion steps in the forward process.
+diffusion_steps,      # diffusion steps in the forward process.
 schedule_sampler,     # the schedule of sampler.
 fp16_scale_growth,    # the mixed precision scale growth.
 use_scale_shift_norm, # whether to use scale shift norm. 
