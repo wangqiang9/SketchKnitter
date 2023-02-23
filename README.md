@@ -54,6 +54,18 @@ use_scale_shift_norm, # whether to use scale shift norm.
 ```
 
 ### Example Usage:
+```
+python train.py --data_dir [/path/to/datasets] \
+                --lr 1e-4 \
+                --batch_size 4 \
+                --use_fp16 False \
+                --log_dir [/path/to/log] \
+                --diffusion_steps 100 \
+                --noise_schedule linear \
+                --image_size 96 \
+                --num_channels 96 \
+                --num_res_blocks 3
+```
 
 ```
 python sample.py --model_path [/path/to/save_models] \
