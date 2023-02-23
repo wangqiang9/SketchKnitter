@@ -68,7 +68,7 @@ python train.py --data_dir [/path/to/datasets] \
 ```
 
 ```bash
-python sample.py --model_path [/path/to/save_models] \
+python sample.py  --model_path [/path/to/save_models] \
                   --pen_break 0.1 \
                   --save_path [/path/to/save_results] \
                   --use_ddim True \
