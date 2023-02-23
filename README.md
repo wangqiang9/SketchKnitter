@@ -18,7 +18,7 @@ In addition to the QuickDraw dataset, you can train the model on any dataset, bu
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/SketchKnitter/blob/main/requirements.txt).
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ### Haperparameters
 Here is a list of full options for the model:
-```
+```bash
 lr,                   # learning rate.
 log_dir,              # save log path.
 dropout,              # dropout rate.
@@ -54,7 +54,7 @@ use_scale_shift_norm, # whether to use scale shift norm.
 ```
 
 ### Example Usage:
-```
+```bash
 python train.py --data_dir [/path/to/datasets] \
                 --lr 1e-4 \
                 --batch_size 4 \
@@ -67,7 +67,7 @@ python train.py --data_dir [/path/to/datasets] \
                 --num_res_blocks 3
 ```
 
-```
+```bash
 python sample.py --model_path [/path/to/save_models] \
                   --pen_break 0.1 \
                   --save_path [/path/to/save_results] \
@@ -82,13 +82,13 @@ python sample.py --model_path [/path/to/save_models] \
 
 ## Visualization
 Because the result file is trained, reasoned and stored in the format of relative coordinate difference vector, if you want to visualize the result, fill the saved `.npz` file address into `SketchData(dataPath='./datasets_npz')`, and then run the following script, and the result `.jpg` file will be saved in `./save_sketch`.
-```
+```bash
 python draw_sketch.py
 ```
 
 ## Evaluation
 Please package the results to be evaluated in `.npz` format, and provide `FID`, `IS`, `Precision` and `Recall` test results.
-```
+```bash
 python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-data]
 ```
 
