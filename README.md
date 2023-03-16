@@ -148,7 +148,14 @@ Only part of the results are listed here. For more detailed results, please see 
 This project is released under the [MIT License](https://github.com/XDUWQ/SketchKnitter/blob/main/LICENSE).
 
 ## Citation
-The paper has been accepted by ICLR 2023, and the citation will be released later. 
+If you find this repository useful for your research, please use the following.
+```
+@inproceedings{wangsketchknitter,
+  title={SketchKnitter: Vectorized Sketch Generation with Diffusion Models},
+  author={Wang, Qiang and Deng, Haoge and Qi, Yonggang and Li, Da and Song, Yi-Zhe},
+  booktitle={The Eleventh International Conference on Learning Representations}
+}
+```
 
 ## Acknowledgements
 * [Quick, Draw!](https://github.com/googlecreativelab/quickdraw-dataset)
