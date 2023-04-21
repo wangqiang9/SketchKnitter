@@ -40,7 +40,7 @@ def main():
         image_size=args.image_size,
         category=["moon.npz", "airplane.npz", "fish.npz", "umbrella.npz", "train.npz",
                   "spider.npz", "shoe.npz", "apple.npz", "lion.npz", "bus.npz"],
-        class_cond=True,
+        class_cond=False,
     )
 
     logger.log("training...")
