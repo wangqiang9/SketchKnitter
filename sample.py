@@ -63,7 +63,7 @@ def main():
         sample_fn = (
             diffusion.p_sample_loop if not args.use_ddim else diffusion.ddim_sample_loop
         )
-        sample, pen_state = sample_fn(
+        sample, pen_state, _ = sample_fn(
             model,
             (args.batch_size, 96, 2),
             clip_denoised=args.clip_denoised,
