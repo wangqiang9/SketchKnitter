@@ -162,6 +162,7 @@ If you find this repository useful for your research, please use the following.
 * [guided-diffusion](https://github.com/openai/guided-diffusion)
 * [Sketch-R2CNN](https://github.com/craigleili/Sketch-R2CNN)
 * [PerceptualSimilarity](https://github.com/richzhang/PerceptualSimilarity)
+* [SketchLattice](https://github.com/qugank/sketch-lattice.github.io)
 
 ## Contact
 If you have any questions about the code, please contact wanqqiang@bupt.edu.cn 
