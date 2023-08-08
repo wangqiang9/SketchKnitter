@@ -71,7 +71,6 @@ def main():
         )
         sample_all = th.cat((sample, pen_state), 2).cpu()
         sample_all = bin_pen(sample_all, args.pen_break)
-        print(f"sample all {sample_all} is saved!")
 
 def create_argparser():
     defaults = dict(
