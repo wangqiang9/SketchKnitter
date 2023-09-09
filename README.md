@@ -101,36 +101,6 @@ To calculate of `FID` and `IS`, refer to the [official code](https://github.com/
 | Ours ([Point-Shuffle](https://github.com/qugank/sketch-lattice.github.io)) | 9.5 | 5.3 | 0.35 | 0.72 |
 | Ours ([Stroke-Shuffle](https://github.com/qugank/sketch-lattice.github.io)) |  8.2 | 3.8  | 0.36 | 0.74 |
 
-| **Moderate** | FID↓ | GS↓ |  Prec↑ | Rec↑ |
-| :----:| :----: | :----: | :----: | :----: |
-| [SketchPix2seq](https://github.com/MarkMoHR/sketch-pix2seq) | 16.4 | 49.7 | 0.38 | 0.75 |
-| [SketchHealer](https://github.com/sgybupt/SketchHealer) | 12.9 | 9.8 | 0.39 | 0.79 |
-| [SketchRNN](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn) | 13.0 |  11.0 | 0.42 | 0.77 |
-| [Diff-HW](https://github.com/tcl9876/Diffusion-Handwriting-Generation) | 15.9 | 23.4 | 0.37 | 0.76 |
-| [SketchODE](https://github.com/dasayan05/sketchode) | 18.8 | 29.6 | 0.31 | 0.66 |
-| Ours (full 1000 steps)  | **8.4**| **4.7** | **0.45** | **0.87** |
-| Ours (r-Shortcut, S=30)  | 8.9 | 5.2  | 0.44 | 0.85 |
-| Ours (Linear-DDIMs, S=30) | 13.3 | 8.8 | 0.36 | 0.78 |
-| Ours (Quadratic-DDIMs, S=30)  | 13.8 | 8.7 | 0.35 | 0.76 |
-| Ours (Abs)  | 23.4 | 64.6 | 0.13 | 0.48 |
-| Ours ([Point-Shuffle](https://github.com/qugank/sketch-lattice.github.io)) | 11.3 | 7.5  | 0.31 | 0.65 |
-| Ours ([Stroke-Shuffle](https://github.com/qugank/sketch-lattice.github.io))   |9.6  | 7.4 | 0.34 | 0.66 |
-
-| **Complex** | FID↓ | GS↓ |  Prec↑ | Rec↑ |
-| :----:| :----: | :----: | :----: | :----: |
-| [SketchPix2seq](https://github.com/MarkMoHR/sketch-pix2seq) | 18.0  | 73.3 | 0.36 | 0.72 |
-| [SketchHealer](https://github.com/sgybupt/SketchHealer) | 25.9 | 93.2 | 0.29 | 0.63 |
-| [SketchRNN](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn) | 21.4 | 97.6 | 0.35 | 0.72 |
-| [Diff-HW](https://github.com/tcl9876/Diffusion-Handwriting-Generation) | 18.3  | 64.4 |0.23  | 0.64 |
-| [SketchODE](https://github.com/dasayan05/sketchode) | 33.5 | 68.1 | 0.20 | 0.58 |
-| Ours (full 1000 steps)  | **9.4**| **5.2**  | **0.42**| **0.85** |
-| Ours (r-Shortcut, S=30)  | 10.5 | 6.1 | 0.39 | 0.81 |
-| Ours (Linear-DDIMs, S=30) | 15.1 | 9.6 | 0.33 | 0.72 |
-| Ours (Quadratic-DDIMs, S=30)  | 15.4  | 9.9  | 0.34  | 0.75 |
-| Ours (Abs)  | 29.4 | 98.9 | 0.10 | 0.39 |
-| Ours ([Point-Shuffle](https://github.com/qugank/sketch-lattice.github.io)) | 12.4 | 8.1 | 0.20 | 0.61 |
-| Ours ([Stroke-Shuffle](https://github.com/qugank/sketch-lattice.github.io))   | 10.3 | 7.6  | 0.25 | 0.62 |
-
 ![Fig 4](https://github.com/XDUWQ/SketchKnitter/blob/main/images/4.png)
 
 Only part of the results are listed here. For more detailed results, please see [our paper and supplementary materials](https://openreview.net/pdf?id=4eJ43EN2g6l).
