@@ -58,7 +58,7 @@ use_scale_shift_norm, # whether to use scale shift norm.
 bash train.sh
 ```
 
-# Inference Example Usage:
+### Inference Example Usage:
 ```bash
 bash sample.sh
 ```
