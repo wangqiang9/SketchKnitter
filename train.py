@@ -19,8 +19,8 @@ def main():
 
     if not os.path.exists(args.log_dir):
         os.makedirs(args.log_dir)
-    if not os.path.exists(args.log_dir):
-        os.makedirs(args.log_dir)
+    if not os.path.exists(args.data_dir):
+        raise FileNotFoundError("The dataset path {args.data_dir} is not found!")
 
     dist_util.setup_dist()
     logger.configure(args.log_dir)
@@ -38,8 +38,7 @@ def main():
         data_dir=args.data_dir,
         batch_size=args.batch_size,
         image_size=args.image_size,
-        category=["moon.npz", "airplane.npz", "fish.npz", "umbrella.npz", "train.npz",
-                  "spider.npz", "shoe.npz", "apple.npz", "lion.npz", "bus.npz"],
+        category=["moon.npz"], # replace your own datasets name.
         class_cond=False,
     )
 
@@ -74,11 +73,11 @@ def create_argparser():
         microbatch=-1,  
         ema_rate="0.9999",  
         log_interval=10,
-        save_interval=10000,
+        save_interval=100000,
         resume_checkpoint="",
         use_fp16=False,
         fp16_scale_growth=1e-3,
-        log_dir='./debug',
+        log_dir='./logs',
     )
     defaults.update(model_and_diffusion_defaults())
     parser = argparse.ArgumentParser()

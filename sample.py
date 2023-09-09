@@ -1,6 +1,7 @@
 import argparse
 import os
 import torch as th
+import numpy as np
 
 from sketch_diffusion import dist_util, logger
 from sketch_diffusion.script_util import (
@@ -13,7 +14,6 @@ from sketch_diffusion.script_util import (
     add_dict_to_argparser,
     args_to_dict,
 )
-from draw_sketch import DrawSketch
 
 def bin_pen(x, pen_break=0.005):
     result = x
@@ -29,7 +29,7 @@ def bin_pen(x, pen_break=0.005):
 def main():
     args = create_argparser().parse_args()
 
-    if os.path.exists(args.log_dir+'/test') is False:
+    if not os.path.exists(args.log_dir+'/test'):
         os.makedirs(args.log_dir+'/test')
     args.log_dir = args.log_dir + '/test'
     if not os.path.exists(args.save_path):
@@ -65,12 +65,13 @@ def main():
         )
         sample, pen_state, _ = sample_fn(
             model,
-            (args.batch_size, 96, 2),
+            (args.batch_size, args.image_size, 2),
             clip_denoised=args.clip_denoised,
             model_kwargs=model_kwargs,
         )
         sample_all = th.cat((sample, pen_state), 2).cpu()
         sample_all = bin_pen(sample_all, args.pen_break)
+        np.savez(os.path.join(args.save_path, 'result.npz'), sample_all)
 
 def create_argparser():
     defaults = dict(
@@ -90,5 +91,4 @@ def create_argparser():
 
 
 if __name__ == "__main__":
-    draw = DrawSketch()
     main()
