@@ -10,15 +10,15 @@ _Authors_: [Qiang Wang](https://scholar.google.com/citations?user=lXyi3t4AAAAJ&h
 ![Fig.1](https://github.com/XDUWQ/SketchKnitter/blob/main/images/overview.png)
 
 ## Datasets
-Please go to the [QuickDraw official website](https://github.com/googlecreativelab/quickdraw-dataset) to download the datasets. The class list used in the paper: `moon`, `airplane`, `fish`, `umbrella`, `train`, `spider`, `shoe`, `apple`, `lion`, `bus`, you can also replace it with any other category. 
-
-The complete dataset in the paper can be downloaded from [this link](https://github.com/XDUWQ/SketchKnitter/tree/main/datasets). Due to size limitations, this repo does not contain any datasets, you can also download the all of Quickdraw `.npz` datasets from [Google Cloud](https://console.cloud.google.com/storage/browser/quickdraw_dataset/sketchrnn) for local use. Each category class is stored in its own file, and contains training/validation/test set sizes of 70000/2500/2500 examples.
+Please go to the [QuickDraw official website](https://quickdraw.withgoogle.com/) to download the datasets. The class list used in the paper: `moon`, `airplane`, `fish`, `umbrella`, `train`, `spider`, `shoe`, `apple`, `lion`, `bus`, you can also replace it with any other category. Each category class is stored in its own file, and contains training/validation/test set sizes of 70000/2500/2500 examples.
 
 In addition to the QuickDraw dataset, you can train the model on any dataset, but please pay attention to organizing the dataset into vector format and packaging it into `.npz` file. In the case of less data sets, please pay attention to over-fitting. If you want to create your own dataset, you can follow the [official tutorial](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn#creating-your-own-dataset) of SketchRNN.
 
 ## Installation
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/SketchKnitter/blob/main/requirements.txt).
 ```bash
+conda create -n sketchknitter python=3.7
+conda activate sektchknitter
 pip install -r requirements.txt
 ```
 
@@ -80,19 +80,10 @@ python sample.py  --model_path [/path/to/save_models] \
                   --num_res_blocks 3
 ```
 
-## Visualization
-Because the result file is trained, reasoned and stored in the format of relative coordinate difference vector, if you want to visualize the result, fill the saved `.npz` file address into `SketchData(dataPath='./datasets_npz')`, and then run the following script, and the result `.jpg` file will be saved in `./save_sketch`.
-```bash
-python draw_sketch.py
-```
+## Visualization and Evaluation
+`sample.py` obtained results are stored in `.npz` file format, which can be directly used to calculate quantitative indicators such as `FID`, `IS`, `GS`, etc. You can also visualize the results for qualitative experiments, refer to the results of Google Brain for the [visualization method](https://github.com/magenta/magenta/tree/main/magenta/models/sketch_rnn).
 
-## Evaluation
-Please package the results to be evaluated in `.npz` format, and provide `FID`, `IS`, `Precision` and `Recall` test results.
-```bash
-python evaluations/evaluator.py [/path/to/reference-data] [/path/to/generate-data]
-```
-
-We find that `IS` can not accurately describe the distribution of vectorized data, so we use `GS` instead of `IS` to measure diversity in this paper. The calculation of [Geometry Score(`GS`)](https://github.com/KhrulkovV/geometry-score) can directly use data in vector format, please go to the [official website](https://github.com/KhrulkovV/geometry-score) for instructions.
+To calculate of `FID` and `IS`, refer to the [official code](https://github.com/topics/fid-score). The calculation of [Geometry Score(`GS`)](https://github.com/KhrulkovV/geometry-score) can directly use data in vector format, please go to the [official website](https://github.com/KhrulkovV/geometry-score) for instructions.
 
 ## Results
 | **Simple** | FID↓ | GS↓ |  Prec↑ | Rec↑ |
