@@ -18,7 +18,7 @@ In addition to the QuickDraw dataset, you can train the model on any dataset, bu
 The requirements of this repo can be found in [requirements.txt](https://github.com/XDUWQ/SketchKnitter/blob/main/requirements.txt).
 ```bash
 conda create -n sketchknitter python=3.7
-conda activate sektchknitter
+conda activate sketchknitter
 pip install -r requirements.txt
 ```
 
